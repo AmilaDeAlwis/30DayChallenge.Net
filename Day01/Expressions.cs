@@ -94,10 +94,12 @@ namespace _30DayChallenge.Net.Day1
         /// </summary>
         public static void CheckComparisonOperator()
         {
+            Console.WriteLine("Method 04: Comparison operators usage");
             Console.WriteLine(1 > 2);
             Console.WriteLine(1 < 2);
             Console.WriteLine(1 >= 1);
             Console.WriteLine(1 <= 1);
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
