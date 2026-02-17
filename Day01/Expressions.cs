@@ -64,14 +64,25 @@ namespace _30DayChallenge.Net.Day1
         /// True
         /// False
         /// </summary>
-        public static void CheckInEqualityOperator()
-        {
-            Console.WriteLine("a" != "a");
-            Console.WriteLine("a" != "A");
-            Console.WriteLine(1 != 2);
+        //public static void CheckInEqualityOperator()
+        //{
+        //    Console.WriteLine("a" != "a");
+        //    Console.WriteLine("a" != "A");
+        //    Console.WriteLine(1 != 2);
 
-            string myValue = "a";
-            Console.WriteLine(myValue != "a");
+        //    string myValue = "a";
+        //    Console.WriteLine(myValue != "a");
+        //}
+
+        public static void CheckNotEqualOperator()
+        {
+            Console.WriteLine("Method 03: Check Not Equal moments");
+            int v1 = 1;
+            int v2 = 2;
+            Console.WriteLine(v1 != v2);
+            Console.WriteLine(v1+1 != v2);
+            Console.WriteLine(v1*2 != v2);
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
