@@ -15,14 +15,26 @@ namespace _30DayChallenge.Net.Day1
         /// False
         /// True
         /// </summary>
-        public static void CheckEqualityOperator()
-        {
-            Console.WriteLine("a" == "a");
-            Console.WriteLine("a" == "A");
-            Console.WriteLine(1 == 2);
+        //public static void CheckEqualityOperator()
+        //{
+        //    Console.WriteLine("a" == "a");
+        //    Console.WriteLine("a" == "A");
+        //    Console.WriteLine(1 == 2);
+        //    Console.WriteLine("a" == " a");
 
-            string myValue = "a";
-            Console.WriteLine(myValue == "a");
+        //    string myValue = "a";
+        //    Console.WriteLine(myValue == "a");
+        //}
+
+        public static void CheckEualityOperator()
+        {
+            Console.WriteLine("Check Equality Operator");
+            string v1 = "a";
+            string v2 = "b";
+            Console.WriteLine(v2 == "b");
+            Console.WriteLine("b" == v2.ToUpper());
+            Console.WriteLine(2 == 2);
+            Console.WriteLine(v1.ToUpper() == v2.ToUpper());
         }
 
         /// <summary>
