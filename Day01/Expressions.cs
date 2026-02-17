@@ -26,25 +26,35 @@ namespace _30DayChallenge.Net.Day1
         //    Console.WriteLine(myValue == "a");
         //}
 
-        public static void CheckEualityOperator()
+        public static void CheckEqualityOperator()
         {
-            Console.WriteLine("Check Equality Operator");
+            Console.WriteLine("Method 01: Check Equality Operator");
             string v1 = "a";
             string v2 = "b";
             Console.WriteLine(v2 == "b");
             Console.WriteLine("b" == v2.ToUpper());
             Console.WriteLine(2 == 2);
             Console.WriteLine(v1.ToUpper() == v2.ToUpper());
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
         /// Outputs
         /// True
         /// </summary>
-        public static void CheckEqualityBuiltInMethods() {
-            string value1 = " a";
-            string value2 = "A ";
-            Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+        //public static void CheckEqualityBuiltInMethods() {
+        //    string value1 = " a";
+        //    string value2 = "A ";
+        //    Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+        //}
+
+        public static void CheckVariableEqualityUsingBuiltInMethods()
+        {
+            Console.WriteLine("Method 02: Check Equality Using Built-In Methods");
+            string value1 = "mynameis Summer";
+            string value2 = "my NAME is SumMEr";
+            Console.WriteLine(value1.Trim().ToUpper() == value2.Trim().ToUpper());
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
