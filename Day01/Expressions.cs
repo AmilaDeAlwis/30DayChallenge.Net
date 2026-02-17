@@ -107,9 +107,11 @@ namespace _30DayChallenge.Net.Day1
         /// </summary>
         public static void CheckBooleanMethods()
         {
-            string pangram = "The quick brown fox jumps over the lazy dog.";
-            Console.WriteLine(pangram.Contains("fox"));
-            Console.WriteLine(pangram.Contains("cow"));
+            Console.WriteLine("Method 05: Using boolean methods");
+            string pangram = "KSI has a big forehead";
+            Console.WriteLine(pangram.Contains("big"));
+            Console.WriteLine(pangram.Contains("smart"));
+            Console.WriteLine("------------------------------");
         }
     }
 }
