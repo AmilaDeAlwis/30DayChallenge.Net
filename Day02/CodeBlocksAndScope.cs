@@ -14,11 +14,14 @@ namespace _30DayChallenge.Net.Day2
         /// </summary>
         public static void VariableInCodeBlock()
         {
-            bool flag = true;
+            bool flag = true; // boolean flag
             if (flag)
             {
+                Console.WriteLine("Variable scope starts from here");
                 int value = 10;
                 Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope end here");
+                Console.WriteLine("------------------------------");
             }
         }
 
