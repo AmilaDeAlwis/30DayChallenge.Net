@@ -52,12 +52,12 @@ namespace _30DayChallenge.Net.Day2
         public static void VariableAboveCodeBlock()
         {
             bool flag = true;
-            int value;
+            int value; // No value assigned. Declared only.
 
             if (flag)
             {
                 Console.WriteLine("Variable scope starts from here");
-                Console.WriteLine("'value' variable can't within the code block. Compiler error.");
+                Console.WriteLine("'value' variable can't access within the code block. Compiler error.");
                 Console.WriteLine("Variable scope end here");
             }
 
@@ -75,15 +75,18 @@ namespace _30DayChallenge.Net.Day2
         public static void VariableAboveCodeBlockv1()
         {
             bool flag = true;
-            int value = 0;
+            int value = 0; // Value assigned. Default value is 0.
 
             if (flag)
             {
-                Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope starts from here");
+                Console.WriteLine($"Variable is initialized. Inside the code block: {value}");
+                Console.WriteLine("Variable scope end here");
             }
 
             value = 10;
             Console.WriteLine($"Outside the code block: {value}");
+            Console.WriteLine("------------------------------");
         }
     }
 
