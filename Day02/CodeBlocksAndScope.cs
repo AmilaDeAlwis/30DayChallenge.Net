@@ -14,11 +14,14 @@ namespace _30DayChallenge.Net.Day2
         /// </summary>
         public static void VariableInCodeBlock()
         {
-            bool flag = true;
+            bool flag = true; // boolean flag
             if (flag)
             {
+                Console.WriteLine("Variable scope starts from here");
                 int value = 10;
                 Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope end here");
+                Console.WriteLine("------------------------------");
             }
         }
 
@@ -31,12 +34,15 @@ namespace _30DayChallenge.Net.Day2
             bool flag = true;
             if (flag)
             {
+                Console.WriteLine("Variable scope starts from here");
                 int value = 10;
                 Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope end here");
             }
 
-            //Uncomment below line to validate
-            //Console.WriteLine($"Outside the code block: {value}");
+            Console.WriteLine("Outside the code block");
+            Console.WriteLine("If 'value' was called here, it consider as calling from outside the code block. Compiler error.");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -46,16 +52,18 @@ namespace _30DayChallenge.Net.Day2
         public static void VariableAboveCodeBlock()
         {
             bool flag = true;
-            int value;
+            int value; // No value assigned. Declared only.
 
             if (flag)
             {
-                //Uncomment below line to validate
-                //Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope starts from here");
+                Console.WriteLine("'value' variable can't access within the code block. Compiler error.");
+                Console.WriteLine("Variable scope end here");
             }
 
             value = 10;
             Console.WriteLine($"Outside the code block: {value}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -67,15 +75,18 @@ namespace _30DayChallenge.Net.Day2
         public static void VariableAboveCodeBlockv1()
         {
             bool flag = true;
-            int value = 0;
+            int value = 0; // Value assigned. Default value is 0.
 
             if (flag)
             {
-                Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope starts from here");
+                Console.WriteLine($"Variable is initialized. Inside the code block: {value}");
+                Console.WriteLine("Variable scope end here");
             }
 
             value = 10;
             Console.WriteLine($"Outside the code block: {value}");
+            Console.WriteLine("------------------------------");
         }
     }
 

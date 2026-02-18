@@ -83,8 +83,8 @@ static string ChooseFrom30DayChallenge(int value)
 static string ExecuteDay1()
 {
     Expressions.CheckEqualityOperator();
-    Expressions.CheckEqualityBuiltInMethods();
-    Expressions.CheckInEqualityOperator();
+    Expressions.CheckVariableEqualityUsingBuiltInMethods();
+    Expressions.CheckNotEqualOperator();
     Expressions.CheckComparisonOperator();
     Expressions.CheckBooleanMethods();
 
