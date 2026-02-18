@@ -34,12 +34,16 @@ namespace _30DayChallenge.Net.Day2
             bool flag = true;
             if (flag)
             {
+                Console.WriteLine("Variable scope starts from here");
                 int value = 10;
                 Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope end here");
+                Console.WriteLine("------------------------------");
             }
 
-            //Uncomment below line to validate
-            //Console.WriteLine($"Outside the code block: {value}");
+            Console.WriteLine("Outside the code block");
+            Console.WriteLine("If 'value' was called here, it consider as calling from outside the code block");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
