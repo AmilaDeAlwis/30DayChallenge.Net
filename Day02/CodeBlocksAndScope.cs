@@ -38,11 +38,10 @@ namespace _30DayChallenge.Net.Day2
                 int value = 10;
                 Console.WriteLine($"Inside the code block: {value}");
                 Console.WriteLine("Variable scope end here");
-                Console.WriteLine("------------------------------");
             }
 
             Console.WriteLine("Outside the code block");
-            Console.WriteLine("If 'value' was called here, it consider as calling from outside the code block");
+            Console.WriteLine("If 'value' was called here, it consider as calling from outside the code block. Compiler error.");
             Console.WriteLine("------------------------------");
         }
 
@@ -57,12 +56,14 @@ namespace _30DayChallenge.Net.Day2
 
             if (flag)
             {
-                //Uncomment below line to validate
-                //Console.WriteLine($"Inside the code block: {value}");
+                Console.WriteLine("Variable scope starts from here");
+                Console.WriteLine("'value' variable can't within the code block. Compiler error.");
+                Console.WriteLine("Variable scope end here");
             }
 
             value = 10;
             Console.WriteLine($"Outside the code block: {value}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
