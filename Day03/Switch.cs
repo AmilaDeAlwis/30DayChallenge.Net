@@ -54,6 +54,7 @@ namespace _30DayChallenge.Net.Day3
         public static void ChangeSwitchLabelExample()
         {
             employeeLevel = 201;
+            employeeName = "Gimhana De Alwis";
             SwitchExample();
         }
 
