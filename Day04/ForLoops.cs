@@ -44,14 +44,15 @@ namespace _30DayChallenge.Net.Day4
         /// 3
         /// 2
         /// 1
-        /// 0
         /// </summary>
         public static void BackwardForLoopExample()
         {
-            for (int i = 10; i >= 0; i--)
+            for (int i = 10; i > 0; i--)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
