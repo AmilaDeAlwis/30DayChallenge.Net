@@ -87,10 +87,21 @@ namespace _30DayChallenge.Net.Day4
         {
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
                 if (i == 6) break;
             }
 
+            Console.WriteLine("------------------------------");
+        }
+
+        public static void BreakingAndIteratingForLoopExample()
+        {
+            for (int i = 0; i < 10; i+=3)
+            {
+                Console.WriteLine(i);
+                if (i == 7) break;
+            }
+            Console.WriteLine("Loop iterating in 3, 6, 9 pattern. If i equals to 7, the loops break, otherwise continue as the condition fulfilled.");
             Console.WriteLine("------------------------------");
         }
     }
