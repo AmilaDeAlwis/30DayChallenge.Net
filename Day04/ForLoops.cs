@@ -20,13 +20,16 @@ namespace _30DayChallenge.Net.Day4
         /// 7
         /// 8
         /// 9
+        /// 10
         /// </summary>
         public static void ForLoopExample()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i <= 10; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
