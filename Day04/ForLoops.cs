@@ -20,13 +20,16 @@ namespace _30DayChallenge.Net.Day4
         /// 7
         /// 8
         /// 9
+        /// 10
         /// </summary>
         public static void ForLoopExample()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i <= 10; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -41,14 +44,15 @@ namespace _30DayChallenge.Net.Day4
         /// 3
         /// 2
         /// 1
-        /// 0
         /// </summary>
         public static void BackwardForLoopExample()
         {
-            for (int i = 10; i >= 0; i--)
+            for (int i = 10; i > 0; i--)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -60,10 +64,12 @@ namespace _30DayChallenge.Net.Day4
         /// </summary>
         public static void IterationForLoopExample()
         {
-            for (int i = 0; i < 10; i += 3)
+            for (int i = 0; i < 20; i += 5)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -81,9 +87,32 @@ namespace _30DayChallenge.Net.Day4
         {
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
+                if (i == 6) break;
+            }
+
+            Console.WriteLine("------------------------------");
+        }
+
+        public static void BreakingAndIteratingForLoopExample()
+        {
+            for (int i = 0; i < 10; i+=3)
+            {
+                Console.WriteLine($"Number {i}");
                 if (i == 7) break;
             }
+            Console.WriteLine("Loop iterating in 3, 6, 9 pattern. If i equals to 7, the loops break, otherwise continue as the condition fulfilled.");
+            Console.WriteLine("------------------------------");
+        }
+
+        public static void ForLoopWithContinue()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                //if (i == 7) continue;
+                Console.WriteLine($"Number {i}");
+            }
+            Console.WriteLine("------------------------------");
         }
     }
 }

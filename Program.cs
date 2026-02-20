@@ -127,6 +127,8 @@ static string ExecuteDay4()
     ForLoops.BackwardForLoopExample();
     ForLoops.IterationForLoopExample();
     ForLoops.BreakForLoopExample();
+    ForLoops.BreakingAndIteratingForLoopExample();
+    ForLoops.ForLoopWithContinue();
     return "Executed Day 4 successfully..!!";
 }
 
