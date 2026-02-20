@@ -64,10 +64,12 @@ namespace _30DayChallenge.Net.Day4
         /// </summary>
         public static void IterationForLoopExample()
         {
-            for (int i = 0; i < 10; i += 3)
+            for (int i = 0; i < 20; i += 5)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Number {i}");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
