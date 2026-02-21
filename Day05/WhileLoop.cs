@@ -24,8 +24,10 @@ namespace _30DayChallenge.Net.Day5
             do
             {
                 current = random.Next(1, 11);
-                Console.WriteLine(current);
-            } while (current != 7);
+                Console.WriteLine(2*current);
+            } while (current != 10);
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
