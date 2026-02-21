@@ -24,8 +24,10 @@ namespace _30DayChallenge.Net.Day5
             do
             {
                 current = random.Next(1, 11);
-                Console.WriteLine(current);
-            } while (current != 7);
+                Console.WriteLine(2*current);
+            } while (current != 10);
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -40,12 +42,13 @@ namespace _30DayChallenge.Net.Day5
             Random random = new Random();
             int current = random.Next(1, 11);
 
-            while (current >= 3)
+            while (current >= 5)
             {
-                Console.WriteLine(current);
+                Console.WriteLine(2*current);
                 current = random.Next(1, 11);
             }
             Console.WriteLine($"Last number: {current}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -58,16 +61,18 @@ namespace _30DayChallenge.Net.Day5
         public static void ContinueDoWhileLoopExample()
         {
             Random random = new Random();
-            int current = random.Next(1, 11);
+            int current = 0;
 
             do
             {
                 current = random.Next(1, 11);
 
-                if (current >= 8) continue;
+                if (current <= 5) continue;
 
-                Console.WriteLine(current);
+                Console.WriteLine(2 * current);
             } while (current != 7);
+
+            Console.WriteLine("------------------------------");
         }
     }
 }
