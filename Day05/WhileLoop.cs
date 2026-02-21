@@ -42,12 +42,13 @@ namespace _30DayChallenge.Net.Day5
             Random random = new Random();
             int current = random.Next(1, 11);
 
-            while (current >= 3)
+            while (current >= 5)
             {
-                Console.WriteLine(current);
+                Console.WriteLine(2*current);
                 current = random.Next(1, 11);
             }
             Console.WriteLine($"Last number: {current}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
