@@ -61,16 +61,18 @@ namespace _30DayChallenge.Net.Day5
         public static void ContinueDoWhileLoopExample()
         {
             Random random = new Random();
-            int current = random.Next(1, 11);
+            int current = 0;
 
             do
             {
                 current = random.Next(1, 11);
 
-                if (current >= 8) continue;
+                if (current <= 5) continue;
 
-                Console.WriteLine(current);
+                Console.WriteLine(2 * current);
             } while (current != 7);
+
+            Console.WriteLine("------------------------------");
         }
     }
 }
