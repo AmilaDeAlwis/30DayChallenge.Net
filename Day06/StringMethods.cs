@@ -57,6 +57,7 @@ namespace _30DayChallenge.Net.Day6
 
             int length = closingPosition - openingPosition;
             Console.WriteLine(message.Substring(openingPosition, length));
+            Console.WriteLine("------------------------------");
         }
     }
 }
