@@ -47,6 +47,7 @@ namespace _30DayChallenge.Net.Day6
         /// </summary>
         public static void SubstringExample2()
         {
+            Console.WriteLine("More clean way to get the text inside the parentheses");
             string message = "Find what is (inside the parentheses)";
 
             int openingPosition = message.IndexOf('(');
