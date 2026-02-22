@@ -17,11 +17,12 @@ namespace _30DayChallenge.Net.Day6
         {
             string message = "Find what is (inside the parentheses)";
 
-            int openingPosition = message.IndexOf('(');
-            int closingPosition = message.IndexOf(')');
+            int openingPosition = message.IndexOf('('); // get the index of the opening parentheses
+            int closingPosition = message.IndexOf(')'); // get the index of the closing parentheses
 
             Console.WriteLine(openingPosition);
             Console.WriteLine(closingPosition);
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
