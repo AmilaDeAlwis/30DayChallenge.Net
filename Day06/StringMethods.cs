@@ -17,11 +17,12 @@ namespace _30DayChallenge.Net.Day6
         {
             string message = "Find what is (inside the parentheses)";
 
-            int openingPosition = message.IndexOf('(');
-            int closingPosition = message.IndexOf(')');
+            int openingPosition = message.IndexOf('('); // get the index of the opening parentheses
+            int closingPosition = message.IndexOf(')'); // get the index of the closing parentheses
 
             Console.WriteLine(openingPosition);
             Console.WriteLine(closingPosition);
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -35,8 +36,9 @@ namespace _30DayChallenge.Net.Day6
             int openingPosition = message.IndexOf('(');
             int closingPosition = message.IndexOf(')');
 
-            int length = closingPosition - openingPosition;
-            Console.WriteLine(message.Substring(openingPosition, length));
+            int length = closingPosition - openingPosition-1;
+            Console.WriteLine(message.Substring(openingPosition+1, length));
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -45,6 +47,7 @@ namespace _30DayChallenge.Net.Day6
         /// </summary>
         public static void SubstringExample2()
         {
+            Console.WriteLine("More clean way to get the text inside the parentheses");
             string message = "Find what is (inside the parentheses)";
 
             int openingPosition = message.IndexOf('(');
@@ -54,6 +57,7 @@ namespace _30DayChallenge.Net.Day6
 
             int length = closingPosition - openingPosition;
             Console.WriteLine(message.Substring(openingPosition, length));
+            Console.WriteLine("------------------------------");
         }
     }
 }
