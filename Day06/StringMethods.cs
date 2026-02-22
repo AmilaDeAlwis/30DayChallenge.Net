@@ -36,8 +36,9 @@ namespace _30DayChallenge.Net.Day6
             int openingPosition = message.IndexOf('(');
             int closingPosition = message.IndexOf(')');
 
-            int length = closingPosition - openingPosition;
-            Console.WriteLine(message.Substring(openingPosition, length));
+            int length = closingPosition - openingPosition-1;
+            Console.WriteLine(message.Substring(openingPosition+1, length));
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
