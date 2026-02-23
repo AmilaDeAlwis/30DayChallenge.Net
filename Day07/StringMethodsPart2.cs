@@ -32,13 +32,16 @@ namespace _30DayChallenge.Net.Day7
         /// </summary>
         public static void LastIndexOfMethod() {
 
-            string message = "(What if) I am (only interested) in the last (set of parentheses)?";
-            int openingPosition = message.LastIndexOf('(');
+            string message = "I only (want) to retrieve (the text) inside (the last parentheses)";
+            Console.WriteLine($"Normal string: {message}");
 
+            int openingPosition = message.LastIndexOf('(');
             openingPosition += 1;
+
             int closingPosition = message.LastIndexOf(')');
             int length = closingPosition - openingPosition;
             Console.WriteLine(message.Substring(openingPosition, length));
+            Console.WriteLine("------------------------------");
         }
     }
 }
