@@ -16,12 +16,13 @@ namespace _30DayChallenge.Net.Day7
         /// </summary>
         public static void IndexOfAnyMethod()
         {
-            string message = "Help (find) the {opening symbols}";
-            Console.WriteLine($"Searching THIS Message: {message}");
+            string message = "Get any of (the) the {defined symbols}";
+            Console.WriteLine($"Normal string: {message}");
             char[] openSymbols = ['[', '{', '('];
 
             int openingPosition = message.IndexOfAny(openSymbols);
-            Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
+            Console.WriteLine($"Got a substring using the defined characters: {message.Substring(openingPosition)}");
+            Console.WriteLine("------------------------------");
 
         }
 
