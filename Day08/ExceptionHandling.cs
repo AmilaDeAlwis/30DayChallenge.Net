@@ -19,19 +19,21 @@ namespace _30DayChallenge.Net.Day8
             try
             {
                 // try code block - code that may generate an exception
-                Console.WriteLine("Hello from try block");
+                Console.WriteLine("This is the try block");
                 throw new NotImplementedException();
             }
             catch
             {
                 // catch code block - code to handle an exception
-                Console.WriteLine("Hello from exception block");
+                Console.WriteLine("This is the exception(catch) block");
             }
             finally
             {
                 // finally code block - code to clean up resources
-                Console.WriteLine("Hello from finally block");
+                Console.WriteLine("This is finally block");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
