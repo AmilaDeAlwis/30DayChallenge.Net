@@ -19,19 +19,21 @@ namespace _30DayChallenge.Net.Day8
             try
             {
                 // try code block - code that may generate an exception
-                Console.WriteLine("Hello from try block");
+                Console.WriteLine("This is the try block");
                 throw new NotImplementedException();
             }
             catch
             {
                 // catch code block - code to handle an exception
-                Console.WriteLine("Hello from exception block");
+                Console.WriteLine("This is the exception(catch) block");
             }
             finally
             {
                 // finally code block - code to clean up resources
-                Console.WriteLine("Hello from finally block");
+                Console.WriteLine("This is finally block");
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -49,25 +51,27 @@ namespace _30DayChallenge.Net.Day8
                 try
                 {
                     // Step 2: an exception occurs here
-                    Console.WriteLine("Hello from try block");
+                    Console.WriteLine("This is the try block");
                     throw new NotImplementedException();
                 }
                 finally
                 {
                     // Step 4: the system executes the finally code block associated with the try statement where the exception occurred
-                    Console.WriteLine("Hello from inner finally block");
+                    Console.WriteLine("This is the inner finally block");
                 }
 
             }
             catch // Step 3: the system finds a catch clause that can handle the exception
             {
                 // Step 5: the system transfers control to the first line of the catch code block
-                Console.WriteLine("Hello from exception block");
+                Console.WriteLine("This is the exception block");
             }
             finally
             {
-                Console.WriteLine("Hello from outer finally block");
+                Console.WriteLine("This is the outer finally block");
             }
+
+            Console.WriteLine("------------------------------");
         }
     }
 }

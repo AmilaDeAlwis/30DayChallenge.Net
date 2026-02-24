@@ -34,7 +34,7 @@ using _30DayChallenge.Net.Day30;
 
 
 Console.WriteLine("S.No.\t30 Day .Net Challenge\tTutorial\r\nDay 01\tBoolean Expressions\t\r\nDay 02\tVariable Scope & Logic Control\t\r\nDay 03\tSwitch Constructs\t\r\nDay 04\tFor Loops\t\r\nDay 05\tWhile & do-while\t\r\nDay 06\tString built-in methods\t\r\nDay 07\tString built-in methods Part 2\t\r\nDay 08\tException Handling\t\r\nDay 09\tNull Safety\t\r\nDay 10\tFile Paths\t\r\nDay 11\tHelper Methods - Array\t\r\nDay 12\tAzure Functions\t\r\nDay 13\tConfigureAwait(false)\t\r\nDay 14\tLimit Concurrent Async Operations\t\r\nDay 15\tLazy Initialization\t");
-Console.WriteLine("Enter Day value in integer");
+Console.Write("Enter Day value in integer: ");
 int dayValue = Convert.ToInt32(Console.ReadLine());
 ChooseFrom30DayChallenge(dayValue);
 
