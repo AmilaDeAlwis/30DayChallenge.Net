@@ -40,6 +40,8 @@ namespace _30DayChallenge.Net.Day9
             {
                 _ = records.ToString();
             }
+
+            Console.WriteLine("------------------------------");
         }
     }
 }
