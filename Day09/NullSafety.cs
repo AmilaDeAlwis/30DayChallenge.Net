@@ -24,6 +24,8 @@ namespace _30DayChallenge.Net.Day9
             {
                 Console.WriteLine(ex.Message);
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -38,6 +40,8 @@ namespace _30DayChallenge.Net.Day9
             {
                 _ = records.ToString();
             }
+
+            Console.WriteLine("------------------------------");
         }
     }
 }
