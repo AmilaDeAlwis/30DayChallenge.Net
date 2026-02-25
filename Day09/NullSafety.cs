@@ -24,6 +24,8 @@ namespace _30DayChallenge.Net.Day9
             {
                 Console.WriteLine(ex.Message);
             }
+
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
