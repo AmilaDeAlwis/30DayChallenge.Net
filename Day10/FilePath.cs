@@ -14,7 +14,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplayCurrentDirectory()
         {
-            Console.WriteLine(Directory.GetCurrentDirectory());
+            Console.WriteLine($"Get the directory of this file: {Directory.GetCurrentDirectory()}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
