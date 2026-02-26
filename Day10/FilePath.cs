@@ -44,7 +44,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplayFileExtension()
         {
-            Console.WriteLine(Path.GetExtension("sample.json"));
+            Console.WriteLine($"The file extension is: {Path.GetExtension("sample.json")}");
+            Console.WriteLine("------------------------------");
         }
     }
 }
