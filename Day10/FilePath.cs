@@ -24,7 +24,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplaySpecialDirectory()
         {
-            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+            Console.WriteLine($"Get the MyDocument folder location: {Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
