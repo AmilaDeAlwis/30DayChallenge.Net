@@ -14,7 +14,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplayCurrentDirectory()
         {
-            Console.WriteLine(Directory.GetCurrentDirectory());
+            Console.WriteLine($"Get the directory of this file: {Directory.GetCurrentDirectory()}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -23,7 +24,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplaySpecialDirectory()
         {
-            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+            Console.WriteLine($"Get the MyDocument folder location: {Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -32,7 +34,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplayOSPathCharacters()
         {
-            Console.WriteLine($"For windows: {Path.DirectorySeparatorChar}sample");
+            Console.WriteLine($"For windows: {Path.DirectorySeparatorChar} is the seperator character");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -41,7 +44,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplayFileExtension()
         {
-            Console.WriteLine(Path.GetExtension("sample.json"));
+            Console.WriteLine($"The file extension is: {Path.GetExtension("sample.json")}");
+            Console.WriteLine("------------------------------");
         }
     }
 }
