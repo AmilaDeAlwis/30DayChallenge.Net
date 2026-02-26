@@ -34,7 +34,8 @@ namespace _30DayChallenge.Net.Day10
         /// </summary>
         public static void DisplayOSPathCharacters()
         {
-            Console.WriteLine($"For windows: {Path.DirectorySeparatorChar}sample");
+            Console.WriteLine($"For windows: {Path.DirectorySeparatorChar} is the seperator character");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
