@@ -71,7 +71,7 @@ namespace _30DayChallenge.Net.Day11
         public static void ResizeAndAdd() {
             string[] pallets = { "B14", "A11", "B12", "A13" };
 
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"Before Resizing: {string.Join(",", pallets)}");
 
             Array.Resize(ref pallets, 6);
             Console.WriteLine($"Resizing 6 ... count: {pallets.Length}");
@@ -79,7 +79,8 @@ namespace _30DayChallenge.Net.Day11
             pallets[4] = "C01";
             pallets[5] = "C02";
 
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"After resizing: {string.Join(",", pallets)}");
+            Console.WriteLine("------------------------------");
         }
     }
 }
