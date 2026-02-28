@@ -18,15 +18,13 @@ namespace _30DayChallenge.Net.Day11
         /// </summary>
         public static void SortExample()
         {
-            Console.WriteLine("Before Sorting...");
             string[] pallets = { "B14", "A11", "B12", "A13" };
-
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"Before Sorting: {string.Join(",", pallets)}");
 
             Array.Sort(pallets);
 
-            Console.WriteLine("After Sorting...");
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"After Sorting: {string.Join(",", pallets)}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
