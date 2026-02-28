@@ -34,17 +34,15 @@ namespace _30DayChallenge.Net.Day11
         /// After Reverse Sorting...
         /// A13,B12,A11,B14
         /// </summary>
-        public static void ReverseSortExample() {
-
-            Console.WriteLine("Before Sorting...");
+        public static void ReverseSortExample() 
+        {
             string[] pallets = { "B14", "A11", "B12", "A13" };
-
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"Before reversing: {string.Join(",", pallets)}");
 
             Array.Reverse(pallets);
 
-            Console.WriteLine("After Reverse Sorting...");
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"After reversing: {string.Join(",", pallets)}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
