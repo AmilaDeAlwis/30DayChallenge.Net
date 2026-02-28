@@ -18,15 +18,13 @@ namespace _30DayChallenge.Net.Day11
         /// </summary>
         public static void SortExample()
         {
-            Console.WriteLine("Before Sorting...");
             string[] pallets = { "B14", "A11", "B12", "A13" };
-
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"Before Sorting: {string.Join(",", pallets)}");
 
             Array.Sort(pallets);
 
-            Console.WriteLine("After Sorting...");
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"After Sorting: {string.Join(",", pallets)}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -36,17 +34,15 @@ namespace _30DayChallenge.Net.Day11
         /// After Reverse Sorting...
         /// A13,B12,A11,B14
         /// </summary>
-        public static void ReverseSortExample() {
-
-            Console.WriteLine("Before Sorting...");
+        public static void ReverseSortExample() 
+        {
             string[] pallets = { "B14", "A11", "B12", "A13" };
-
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"Before reversing: {string.Join(",", pallets)}");
 
             Array.Reverse(pallets);
 
-            Console.WriteLine("After Reverse Sorting...");
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"After reversing: {string.Join(",", pallets)}");
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -59,10 +55,11 @@ namespace _30DayChallenge.Net.Day11
             string[] pallets = { "B14", "A11", "B12", "A13" };
             Console.WriteLine("");
 
-            Array.Clear(pallets, 0, 2);
+            Array.Clear(pallets, 1, 2);
             Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
 
             Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
@@ -74,7 +71,7 @@ namespace _30DayChallenge.Net.Day11
         public static void ResizeAndAdd() {
             string[] pallets = { "B14", "A11", "B12", "A13" };
 
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"Before Resizing: {string.Join(",", pallets)}");
 
             Array.Resize(ref pallets, 6);
             Console.WriteLine($"Resizing 6 ... count: {pallets.Length}");
@@ -82,7 +79,8 @@ namespace _30DayChallenge.Net.Day11
             pallets[4] = "C01";
             pallets[5] = "C02";
 
-            Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine($"After resizing: {string.Join(",", pallets)}");
+            Console.WriteLine("------------------------------");
         }
     }
 }
