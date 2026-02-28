@@ -55,10 +55,11 @@ namespace _30DayChallenge.Net.Day11
             string[] pallets = { "B14", "A11", "B12", "A13" };
             Console.WriteLine("");
 
-            Array.Clear(pallets, 0, 2);
+            Array.Clear(pallets, 1, 2);
             Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
 
             Console.WriteLine(string.Join(",", pallets));
+            Console.WriteLine("------------------------------");
         }
 
         /// <summary>
