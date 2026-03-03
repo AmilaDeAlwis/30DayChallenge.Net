@@ -30,6 +30,7 @@ namespace AzureFunctionExample
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
             return new OkObjectResult(responseMessage);
+            Console.WriteLine("------------------------------");
         }
     }
 }
