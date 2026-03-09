@@ -43,6 +43,7 @@ namespace _30DayChallenge.Net.Day14
 
                 await Task.WhenAll(tasks);
             }
+            Console.WriteLine("------------------------------");
         }
 
         private static async Task ProcessItem(object item)
