@@ -16,6 +16,7 @@ namespace _30DayChallenge.Net.Day14
         {
             var tasks = items.Select(async item => await ProcessItem(item));
             await Task.WhenAll(tasks);
+            Console.WriteLine("------------------------------");
         }
 
 
